@@ -1,0 +1,8 @@
+---
+- name: Detener servicio SWCajero en máquina Windows
+  hosts: all  # Especifica el grupo de máquinas o el nombre de la máquina específica
+  tasks:
+    - name: Detener servicio SWCajero
+      win_service:
+        name: "SWCajero"
+        state: stopped # Este stado es para reiniciar un servicio, tambien se puede parar con stopped, pausar con paused, iniciar con started
