@@ -1,6 +1,6 @@
- ---
-- name: Ping entre maquina destino y Host
-  hosts: all  # Especifica el grupo de máquinas o el nombre de la máquina específica
+---
+- name: Ping maquinas ATM Brinks
+  hosts: all
   tasks:
-    - name: Realizando Ping
+    - name: Realizando ping entre maquina Host y destino
       win_ping:
