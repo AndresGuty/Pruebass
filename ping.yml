@@ -1,6 +1,6 @@
----
-- name: Detener servicio SWCajero en máquina Windows
+ ---
+- name: Ping entre maquina destino y Host
   hosts: all  # Especifica el grupo de máquinas o el nombre de la máquina específica
   tasks:
-    - name: Detener servicio SWCajero
+    - name: Realizando Ping
       win_ping:
